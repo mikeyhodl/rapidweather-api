@@ -95,7 +95,11 @@ const Weather = () => {
             <strong>Fetching...</strong>
           </p>
         )}
-        {error && <p>Error: {error}</p>}
+        {error && (
+          <p>
+            <strong>Error: {error}</strong>
+          </p>
+        )}
         {weather && weather.location && (
           <div id="weather">
             <h2>
