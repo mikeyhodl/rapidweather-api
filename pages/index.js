@@ -34,7 +34,7 @@ const Weather = () => {
 
         const result = await response.json();
         if (result.error) {
-          setError(result.error);
+          setError(result.error.message);
         } else {
           setWeather(result);
         }
@@ -66,17 +66,6 @@ const Weather = () => {
             <label htmlFor="location">
               <strong>Please enter your location:</strong>
             </label>
-            {/* <br />
-            <input
-              type="text"
-              name="location"
-              id="location"
-              className="form-control"
-            />
-            <br />
-            <button type="submit" value="Submit" className="btn btn-success">
-              Submit
-            </button> */}
           </form>
         </div>
         <div id="weather" />
