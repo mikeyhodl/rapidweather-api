@@ -60,7 +60,7 @@ const Weather = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Weather App by RapidAPI</h1>
+        <h2 className={styles.size}>Weather App by RapidAPI</h2>
         <br />
         <div>
           <form style={{ textAlign: "center" }}>
