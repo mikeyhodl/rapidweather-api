@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 // import Script from "next/script";
 import { useState, useEffect } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Weather = () => {
   const [location, setLocation] = useState("");
@@ -115,7 +115,7 @@ const Weather = () => {
             <p>
               <strong>Weather:</strong> {weather.current.condition.text}
             </p>
-            <Image src={weather.current.condition.icon} alt="Weather icon" />
+            <img src={weather.current.condition.icon} alt="Weather icon" />
             <p>
               <strong>Wind speed:</strong> {weather.current.wind_kph} Km/h
             </p>
