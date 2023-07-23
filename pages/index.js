@@ -115,7 +115,9 @@ const Weather = () => {
             <p>
               <strong>Weather:</strong> {weather.current.condition.text}
             </p>
+            <picture>
             <img src={weather.current.condition.icon} alt="Weather icon" />
+            </picture>
             <p>
               <strong>Wind speed:</strong> {weather.current.wind_kph} Km/h
             </p>
