@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 // import Script from "next/script";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Weather = () => {
   const [location, setLocation] = useState("");
@@ -59,7 +60,7 @@ const Weather = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Weather App RapidAPI</h1>
+        <h1>Weather App by RapidAPI</h1>
         <br />
         <div>
           <form style={{ textAlign: "center" }}>
@@ -114,7 +115,7 @@ const Weather = () => {
             <p>
               <strong>Weather:</strong> {weather.current.condition.text}
             </p>
-            <img src={weather.current.condition.icon} alt="Weather icon" />
+            <Image src={weather.current.condition.icon} alt="Weather icon" />
             <p>
               <strong>Wind speed:</strong> {weather.current.wind_kph} Km/h
             </p>
